@@ -43,6 +43,19 @@ Versi awal memakai kasus balok sederhana dengan beban merata dan persamaan lendu
 - Berikutnya: uji kegunaan bersama mahasiswa/dosen, evaluasi apakah mereka memahami hubungan tiap parameter, lalu tambahkan dashboard kelas atau modul rumus lain berdasarkan hasil uji.
 - Prototipe ini tidak menyertakan backend, akun, sinkronisasi kelas, ataupun penyimpanan data di luar perangkat.
 
+## Pengembangan versi 2.0
+
+Versi 2.0 dibangun sebagai pratinjau terpisah di folder `v2/` agar rilis publik 1.0.0 tetap tersedia untuk dibandingkan.
+
+1. Ubah skenario dari beban merata menjadi truk dengan beban titik di tengah bentang.
+2. Buat aset SVG untuk lanskap jembatan, kendaraan, pilihan material, dan profil balok.
+3. Animasikan perubahan bentuk gelagar saat mahasiswa mengubah beban, material, profil, atau bentang.
+4. Pertahankan grafik sebagai pembacaan kuantitatif dari model yang sama dengan adegan 2D.
+5. Tambahkan misi pilihan desain dengan kredit simulasi dan target lendutan latihan; jelaskan bahwa keduanya bukan standar desain nyata.
+6. Tinjau pratinjau 2.0 sebelum mengganti rilis utama atau mendorong perubahan ke GitHub.
+
+Status implementasi lokal: adegan dan aset SVG, perhitungan beban titik, kontrol interaktif, grafik, lima misi, serta progres lokal sudah dibuat. Pratinjau visual belum ditinjau melalui browser di sesi ini. Asumsi, preset material, dan referensi teknis dicatat di `v2/README.md`.
+
 ## Menjalankan prototipe
 
 Buka `index.html` langsung di browser. Progres misi disimpan di penyimpanan lokal browser; tombol **Mulai ulang progres** menghapus progres prototipe pada perangkat tersebut.
