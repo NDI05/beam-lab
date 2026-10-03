@@ -1,6 +1,6 @@
 # Beam Lab
 
-**Versi rilis di GitHub: 1.0.0**
+**Versi terbaru: 2.5.0**
 
 Beam Lab adalah prototipe pembelajaran Teknik Sipil yang membantu mahasiswa memahami lendutan balok melalui misi interaktif: membuat prediksi, mengubah parameter, membaca grafik, lalu menjelaskan hasilnya.
 
@@ -18,6 +18,12 @@ Buka `index.html` di browser. Aplikasi tidak membutuhkan proses build atau depen
 
 Asumsi dan workflow pengembangan dicatat di [WORKFLOW.md](WORKFLOW.md). Model ini untuk pembelajaran, bukan alat desain struktur.
 
-## Versi berikutnya
+## Pilih versi
 
-Pratinjau lokal versi 2.0 ada di [`v2/index.html`](v2/index.html), dengan asumsi model di [`v2/README.md`](v2/README.md). Versi ini menambahkan ilustrasi jembatan 2D yang berubah saat beban, material, profil, atau bentang diubah, sambil mempertahankan grafik lendutan. Rilis GitHub tetap 1.0.0 sampai versi 2.0 ditinjau dan diminta untuk dipublikasikan.
+Ketiga versi tersedia dari menu **Versi** di aplikasi. Halaman awal tetap membuka 1.0; gunakan menu tersebut untuk berpindah.
+
+- **1.0** — aplikasi awal: buka [`index.html`](index.html), tag GitHub `v1.0.0`.
+- **2.0** — animasi jembatan 2D dan grafik lendutan: buka [`v2.0/index.html`](v2.0/index.html), tag `v2.0.0`.
+- **2.5** — materi 2.0 ditambah simulasi debit air, grafik Manning, dan bank soal: buka [`v2.5/index.html`](v2.5/index.html), tag `v2.5.0`.
+
+[`v2/index.html`](v2/index.html) juga menyediakan halaman pemilih versi. Folder versi 2.0 dan 2.5 menyimpan progres pembelajaran secara terpisah di browser.

@@ -71,6 +71,13 @@ button:disabled { cursor: not-allowed; }
 .breadcrumb-slash { color: #b0bdc0; }
 .breadcrumb strong { color: var(--ink-soft); font-weight: 600; }
 .topbar-actions { display: flex; align-items: center; gap: 22px; }
+.version-menu { position: relative; z-index: 8; flex: 0 0 auto; }
+.version-menu summary { display: inline-flex; min-height: 30px; align-items: center; gap: 8px; padding: 0 9px; border: 1px solid #b8cecc; border-radius: 4px; color: #285f64; background: #dcebe8; font-family: var(--mono); font-size: 9px; font-weight: 600; cursor: pointer; list-style: none; white-space: nowrap; }
+.version-menu summary::-webkit-details-marker { display: none; }
+.version-menu summary span { color: #819194; font-family: var(--sans); font-size: 12px; }
+.version-options { position: absolute; top: calc(100% + 7px); right: 0; display: grid; width: 204px; padding: 5px; border: 1px solid #d2dede; border-radius: 6px; background: #f7f9f7; box-shadow: 0 12px 28px rgba(20,43,54,.14); }
+.version-options a { padding: 9px 10px; border-radius: 4px; color: #536b72; font-size: 10px; text-decoration: none; }
+.version-options a:hover, .version-options a[aria-current="page"] { color: #105e65; background: #e5f1ef; }
 .xp-chip { display: inline-flex; align-items: center; gap: 6px; color: #697d83; font-size: 11px; }
 .xp-chip strong { color: var(--ink); font-family: var(--mono); font-size: 12px; font-weight: 600; font-variant-numeric: tabular-nums; }
 .xp-spark { color: var(--orange); font-size: 17px; line-height: 1; }
@@ -267,6 +274,10 @@ input[type="range"] { display: block; width: 100%; height: 14px; margin: 0; acce
   .breadcrumb { gap: 6px; font-size: 9px; }
   .topbar-actions { gap: 12px; }
   .text-button { max-width: 72px; font-size: 9px; line-height: 1.3; text-align: right; }
+  .topbar-actions { gap: 7px; }
+  .topbar-actions > .text-button { display: none; }
+  .version-menu summary { min-height: 28px; padding-inline: 7px; font-size: 8px; }
+  .version-options { width: 190px; }
   .screen-container { padding: 22px 14px 32px; }
   .map-screen { gap: 25px; }
   .map-hero { display: flex; flex-direction: column; }

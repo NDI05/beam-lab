@@ -45,16 +45,27 @@ Versi awal memakai kasus balok sederhana dengan beban merata dan persamaan lendu
 
 ## Pengembangan versi 2.0
 
-Versi 2.0 dibangun sebagai pratinjau terpisah di folder `v2/` agar rilis publik 1.0.0 tetap tersedia untuk dibandingkan.
+Versi 2.0 disimpan di folder `v2.0/` agar versi 1.0 tetap tersedia untuk dibandingkan.
 
 1. Ubah skenario dari beban merata menjadi truk dengan beban titik di tengah bentang.
 2. Buat aset SVG untuk lanskap jembatan, kendaraan, pilihan material, dan profil balok.
 3. Animasikan perubahan bentuk gelagar saat mahasiswa mengubah beban, material, profil, atau bentang.
 4. Pertahankan grafik sebagai pembacaan kuantitatif dari model yang sama dengan adegan 2D.
 5. Tambahkan misi pilihan desain dengan kredit simulasi dan target lendutan latihan; jelaskan bahwa keduanya bukan standar desain nyata.
-6. Tinjau pratinjau 2.0 sebelum mengganti rilis utama atau mendorong perubahan ke GitHub.
+6. Beri menu pemilih versi agar mahasiswa dapat berpindah antarversi.
 
-Status implementasi lokal: adegan dan aset SVG, perhitungan beban titik, kontrol interaktif, grafik, lima misi, serta progres lokal sudah dibuat. Pratinjau visual belum ditinjau melalui browser di sesi ini. Asumsi, preset material, dan referensi teknis dicatat di `v2/README.md`.
+Status: pratinjau jembatan 2D beserta aset SVG, perhitungan beban titik, grafik, lima misi, dan progres lokal dipush sebagai commit `a93bfa2` dan tag `v2.0.0`. Asumsi, preset, dan referensi teknis dicatat di `v2.0/README.md`.
+
+## Pengembangan versi 2.5
+
+1. Pertahankan simulasi jembatan, grafik, dan misi dari 2.0.
+2. Tambahkan saluran terbuka persegi dengan persamaan Manning `Q = (1/n) A R^(2/3) S^(1/2)`.
+3. Hubungkan kontrol `b`, `y`, `S`, dan `n` ke debit, penampang 2D, gerak aliran, dan grafik `Q` terhadap `y`.
+4. Tambahkan soal bertahap tentang luas basah, perubahan kedalaman, dan kekasaran; beri umpan balik dan XP.
+5. Simpan versi 1.0, 2.0, dan 2.5 dalam folder terpisah, tambahkan menu perpindahan versi, serta buat tag GitHub.
+6. Validasi asumsi dan preset hidraulika bersama dosen sebelum dipakai sebagai materi resmi.
+
+Status: jalur Hidraulika dan tiga soal awal tersedia di `v2.5/`; pilihannya muncul dalam menu **Versi**.
 
 ## Menjalankan prototipe
 

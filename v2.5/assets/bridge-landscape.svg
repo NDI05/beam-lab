@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" fill="none">
+  <defs>
+    <linearGradient id="sky" x1="450" y1="0" x2="450" y2="360" gradientUnits="userSpaceOnUse"><stop stop-color="#cfe7eb"/><stop offset="1" stop-color="#edf4e9"/></linearGradient>
+    <linearGradient id="water" x1="450" y1="205" x2="450" y2="360" gradientUnits="userSpaceOnUse"><stop stop-color="#84c7cb"/><stop offset="1" stop-color="#4b9ea9"/></linearGradient>
+    <linearGradient id="bank" x1="0" y1="210" x2="0" y2="360" gradientUnits="userSpaceOnUse"><stop stop-color="#96b38c"/><stop offset="1" stop-color="#789776"/></linearGradient>
+  </defs>
+  <path fill="url(#sky)" d="M0 0h900v360H0z"/>
+  <circle cx="755" cy="61" r="25" fill="#f5d58e" opacity=".92"/>
+  <path d="M86 75c3-13 14-21 27-21 11 0 20 6 24 16 3-2 7-3 11-3 12 0 21 8 22 19H86c-5-3-5-8 0-11Zm558-27c2-10 11-17 21-17 9 0 16 5 19 13 3-2 6-2 9-2 9 0 16 6 17 14h-66c-3-3-3-6 0-8Z" fill="#f7faf5" opacity=".74"/>
+  <path d="M0 158c90-38 164-26 242 3 75 28 142 23 213-5 75-29 148-34 229-4 78 29 148 27 216-1v62H0v-55Z" fill="#aec8b2"/>
+  <path d="M0 183c91-25 163-17 241 7 72 22 139 17 210-7 82-28 153-29 234-4 80 25 146 20 215-2v59H0v-53Z" fill="#8fac92"/>
+  <path d="M0 199c78-10 152-18 238 9 84 26 155 19 223-2 72-23 148-22 227 0 81 23 145 11 212-5v159H0V199Z" fill="url(#bank)"/>
+  <path d="M235 204c60 12 105 15 165 3 78-16 126-16 202 0 28 6 56 6 82 2v151H218V211l17-7Z" fill="url(#water)"/>
+  <path d="M219 208c64 12 123 14 185 1 73-15 125-16 201 0 31 7 57 8 83 3" stroke="#e1f1e9" stroke-width="4" stroke-linecap="round" opacity=".8"/>
+  <path d="M278 247c40 6 77 7 119 0m52-1c35-5 71-5 106 1m-241 34c30 4 60 5 89 1m104-5c33-4 61-2 92 3m-197 37c32 2 60 2 88-2m41-2c25-2 49 0 70 4" stroke="#c8e8e3" stroke-width="2" stroke-linecap="round" opacity=".52"/>
+  <path d="M0 201c42-9 77-8 111 2 30 9 60 11 97 4l15-3v156H0V201Zm683 7 26 4c46 7 92 1 128-12 23-8 43-9 63-6v166H683V208Z" fill="#849f80"/>
+  <path d="M0 216c42-9 76-7 110 3 34 10 68 10 112 0m464-1c47 10 101 3 138-11 27-10 51-9 76-5" stroke="#b7c59b" stroke-width="3" opacity=".78"/>
+  <g fill="#668a6e" opacity=".78"><circle cx="37" cy="178" r="10"/><circle cx="61" cy="172" r="14"/><circle cx="84" cy="181" r="9"/><circle cx="844" cy="174" r="11"/><circle cx="869" cy="179" r="15"/></g>
+</svg>
