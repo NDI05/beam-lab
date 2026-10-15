@@ -25,4 +25,4 @@ Ini media belajar dengan gaya maket 3D. Tidak memodelkan kegagalan struktur, int
 
 ## Pemeriksaan
 
-`npm test` menjalankan 11 pemeriksaan model dan materi. Seluruh delapan latihan telah dimainkan di browser lokal; tampilan diperiksa pada 390/768/1440 px. Catatan lengkap ada di [`PERBAIKAN_BEAM_LAB_V3.md`](../PERBAIKAN_BEAM_LAB_V3.md). Perubahan redesign belum dideploy ulang ke Vercel; project Vercel belum tertaut ke GitHub untuk auto-deploy.
+`npm test` menjalankan 11 pemeriksaan model dan materi. Seluruh delapan latihan telah dimainkan di browser lokal; tampilan diperiksa pada 390/768/1440 px. Catatan lengkap ada di [`PERBAIKAN_BEAM_LAB_V3.md`](../PERBAIKAN_BEAM_LAB_V3.md). V3 terbaru terbit di [Vercel](https://beam-lab-one.vercel.app/v3.0/). Push ke branch `main` repo `NDI05/beam-lab` memicu deployment production; pull request mendapat preview.

@@ -1,6 +1,6 @@
 # Perbaikan Beam Lab V3
 
-Tanggal: 15 Oktober 2026. Status: kode redesign disimpan di GitHub branch `main`; belum dideploy ulang ke Vercel. Project Vercel belum tertaut ke GitHub.
+Tanggal: 15 Oktober 2026. Status awal saat catatan dibuat: kode redesign disimpan di GitHub branch `main`, tetapi belum dideploy ulang dan project Vercel belum tertaut ke GitHub. Pembaruan: redesign kini terbit di [production](https://beam-lab-one.vercel.app/v3.0/) dan project Vercel `beam-lab` terhubung ke repo `NDI05/beam-lab` untuk deployment otomatis.
 
 ## Perubahan utama
 
@@ -58,7 +58,7 @@ Progres dan XP format sebelumnya dipertahankan melalui migrasi. Attempt lama dim
 
 ## Status GitHub dan Vercel
 
-Saat perubahan ini disiapkan, branch `main` di GitHub masih berada pada versi 2.5. Repo tidak mempunyai workflow di `.github/workflows/`. Project Vercel `beam-lab` juga melaporkan `link: null`, sehingga integrasi Git untuk deployment otomatis belum aktif. Karena itu, push ke GitHub sendiri tidak menjalankan pemeriksaan atau memperbarui deployment. Pengujian dan build yang dicatat di bawah dijalankan lokal.
+Saat redesign ini pertama disiapkan, project belum tertaut ke Git dan catatan pengujian/build di bawah dijalankan lokal. Per 15 Oktober 2026, integrasi Git bawaan Vercel menghubungkan repo `NDI05/beam-lab` ke project `beam-lab`: push ke `main` memicu production deployment dan pull request mendapat preview deployment. Tidak ada workflow GitHub Actions terpisah; `npm test` tetap menjadi pemeriksaan lokal.
 
 ## Pemeriksaan yang dilakukan
 

@@ -17,6 +17,6 @@ Buka `index.html` di browser untuk versi 1.0 atau [`v2/index.html`](v2/index.htm
 
 V3 menyediakan kendaraan bergerak, muatan, bayangan, penampang berongga, orbit/zoom, serta aliran air. Scene dan grafik memakai model perhitungan bersama. Latihan memakai catatan A/B, jawaban numerik, dan penjelasan sebelum progres diberikan. Prototipe ini bukan alat desain struktur, drainase, atau keselamatan.
 
-Redesign 15 Oktober 2026 belum dideploy ulang; deployment Vercel di atas menampilkan versi sebelumnya. Project Vercel belum tertaut ke GitHub untuk auto-deploy, jadi push ke `main` tidak memperbarui situs. Rincian implementasi dan pemeriksaan ada di [catatan perbaikan](PERBAIKAN_BEAM_LAB_V3.md). `npm test` menjalankan pemeriksaan model dan materi.
+Redesign 15 Oktober 2026 sudah terbit ke production di [Beam Lab](https://beam-lab-one.vercel.app/v3.0/). Repo GitHub `NDI05/beam-lab` terhubung ke project Vercel `beam-lab`: push ke `main` menerbitkan production, sedangkan pull request mendapat deployment preview. Build Vercel memeriksa dan menerbitkan situs statis; pemeriksaan model/materi tersedia melalui `npm test`. Rincian implementasi dan pemeriksaan ada di [catatan perbaikan](PERBAIKAN_BEAM_LAB_V3.md).
 
 Asumsi materi dan alur pengembangan dicatat di [WORKFLOW.md](WORKFLOW.md). Catatan implementasi V3 ada di [v3.0/README.md](v3.0/README.md).

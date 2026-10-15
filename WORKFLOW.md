@@ -91,4 +91,4 @@ Buka `index.html` langsung di browser. Progres misi disimpan di penyimpanan loka
 5. Benahi kunci bentang, kelulusan, latihan ulang, rute, reset progres, dan penyimpanan.
 6. Periksa seluruh delapan latihan, hitungan otomatis, serta komposisi desktop/tablet/ponsel.
 
-Status redesign 15 Oktober 2026: kode tersedia di branch `main`; delapan latihan dimainkan di browser, 11 pengujian model lulus, build berhasil, dan lint Taste Skill 0 FAIL/0 WARN. Project Vercel belum tertaut ke GitHub, sehingga push tidak memicu deployment. Catatan rinci ada di [PERBAIKAN_BEAM_LAB_V3.md](PERBAIKAN_BEAM_LAB_V3.md). Untuk V3 jalankan `npm run dev`; setelah mengubah renderer, jalankan `npm run build`.
+Status redesign 15 Oktober 2026: kode tersedia di branch `main`; delapan latihan dimainkan di browser, 11 pengujian model lulus, build berhasil, dan lint Taste Skill 0 FAIL/0 WARN. Project Vercel `beam-lab` kini terhubung ke repo `NDI05/beam-lab`; push ke `main` memicu deployment production dan pull request mendapat preview. Catatan rinci ada di [PERBAIKAN_BEAM_LAB_V3.md](PERBAIKAN_BEAM_LAB_V3.md). Untuk V3 jalankan `npm run dev`; setelah mengubah renderer, jalankan `npm run build`.
