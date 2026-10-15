@@ -1,0 +1,15 @@
+{
+  "name": "beam-lab",
+  "version": "3.0.0",
+  "private": true,
+  "description": "Laboratorium teknik sipil interaktif",
+  "scripts": {
+    "build": "esbuild v3.0/scene3d.js --bundle --minify --format=iife --target=es2020 --outfile=v3.0/scene3d.bundle.js --legal-comments=linked",
+    "dev": "python3 -m http.server 8765 --bind 127.0.0.1",
+    "test": "node --test tests/beam-model.test.cjs"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2",
+    "three": "0.186.1"
+  }
+}

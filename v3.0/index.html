@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f6f2">
+  <meta name="description" content="Pelajari lendutan jembatan dan debit air lewat eksperimen 3D, grafik, dan misi teknik sipil.">
+  <title>Beam Lab | Studio teknik sipil</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/manrope-latin-variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="model.js" defer></script>
+  <script src="lessons.js" defer></script>
+  <script src="scene3d.bundle.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Lewati navigasi</a>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Beam Lab, peta misi"><svg width="32" height="29" viewBox="0 0 32 29" fill="none" aria-hidden="true"><path d="M3 7h26M5 7v16m22-16v16M4 7c3 0 4 11 12 11S25 7 28 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>beam lab<span class="brand-period">.</span></span></a>
+    <nav aria-label="Menu utama"><a href="#home" id="nav-map">Peta misi</a><a href="#bridge" id="nav-lab">Simulasi 3D</a><a href="#flow" id="nav-flow">Debit air</a></nav>
+    <div class="header-tools"><button type="button" class="progress-button" data-action="progress" aria-label="Lihat progres belajar"><span id="xp-total">0 XP</span></button><details class="version-menu"><summary aria-label="Pilih versi Beam Lab">V3 <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="m4 6 4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></summary><div><a href="../index.html">1.0 · Balok dasar</a><a href="../v2.0/index.html">2.0 · Jembatan 2D</a><a href="../v2.5/index.html">2.5 · Debit dan jembatan</a><a href="index.html" aria-current="page">3.0 · Studio 3D</a></div></details></div>
+  </header>
+  <main id="main" tabindex="-1"><div id="screen"><div class="initial-state"><h1>Laboratorium teknik sipil</h1><p>Memuat ruang eksperimen jembatan dan saluran air.</p></div></div><noscript><section class="no-script"><h2>Aktifkan JavaScript untuk bereksperimen</h2><p>Jembatan memakai δmaks = P L³ / (48 E I). Saluran memakai Q = (1/n) A R^(2/3) S^(1/2). Simulasi interaktif memerlukan JavaScript.</p><a href="../v2.5/index.html">Buka versi sebelumnya</a></section></noscript></main>
+  <footer class="site-footer"><span>Beam Lab · Laboratorium teknik sipil</span><span>Model untuk memahami konsep. Bukan alat perencanaan.</span><button class="text-button" type="button" data-action="reset-dialog">Mulai ulang progres</button></footer>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <dialog id="reset-dialog"><h2>Mulai dari awal?</h2><p>Progres dan XP versi ini akan dihapus dari browser ini. Versi lain tetap tersimpan.</p><div class="dialog-actions"><button type="button" class="button button-subtle" data-action="close-dialog">Batal</button><button type="button" class="button" data-action="confirm-reset">Ya, mulai ulang</button></div></dialog>
+  <dialog id="progress-dialog"><div id="progress-content"></div><button type="button" class="button" data-action="close-dialog">Kembali belajar</button></dialog>
+</body>
+</html>

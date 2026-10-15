@@ -1,29 +1,22 @@
 # Beam Lab
 
-**Versi terbaru: 2.5.0**
+**Versi terbaru dalam pengembangan: 3.0.0**
 
-Beam Lab adalah prototipe pembelajaran Teknik Sipil yang membantu mahasiswa memahami lendutan balok melalui misi interaktif: membuat prediksi, mengubah parameter, membaca grafik, lalu menjelaskan hasilnya.
+Beam Lab adalah prototipe pembelajaran Teknik Sipil berbasis misi. Mahasiswa membuat prediksi, mengubah parameter, mengamati model dan grafik, lalu menjelaskan hasilnya.
 
 ## Menjalankan aplikasi
 
-Buka `index.html` di browser. Aplikasi tidak membutuhkan proses build atau dependensi eksternal. Progres misi disimpan di penyimpanan lokal browser yang digunakan.
+Buka `index.html` di browser untuk versi 1.0 atau [`v2/index.html`](v2/index.html) untuk memilih versi. Untuk V3 terbaru, jalankan `npm install`, `npm run build`, lalu `npm run dev` dari root workspace dan buka `http://localhost:8765/v3.0/index.html`. Renderer Three.js dibundel lokal, tanpa CDN saat runtime. Progres setiap versi disimpan terpisah di penyimpanan lokal browser.
 
-## Isi versi 1.0
+## Versi yang tersedia
 
-- Peta progres dengan lima misi berurutan.
-- Simulasi balok sederhana dengan beban merata.
-- Grafik lendutan langsung untuk parameter `q`, `L`, `E`, dan `I`.
-- Perbandingan kondisi awal dengan hasil eksperimen.
-- Prediksi, refleksi, XP, dan progres lokal.
+- **1.0** — balok dasar dan grafik lendutan: [`index.html`](index.html), tag `v1.0.0`.
+- **2.0** — jembatan 2D, eksperimen beban, dan grafik: [`v2.0/index.html`](v2.0/index.html), tag `v2.0.0`.
+- **2.5** — jembatan dan simulasi debit Manning dengan bank soal: [`v2.5/index.html`](v2.5/index.html), tag `v2.5.0`.
+- **3.0** — scene 3D interaktif untuk jembatan dan saluran air, dipadukan dengan grafik dan materi V2.5: [`v3.0/index.html`](v3.0/index.html), [deployment Vercel](https://beam-lab-one.vercel.app/v3.0/). Kode V3 tersedia di branch `main`; tag rilis `v3.0.0` belum dibuat.
 
-Asumsi dan workflow pengembangan dicatat di [WORKFLOW.md](WORKFLOW.md). Model ini untuk pembelajaran, bukan alat desain struktur.
+V3 menyediakan kendaraan bergerak, muatan, bayangan, penampang berongga, orbit/zoom, serta aliran air. Scene dan grafik memakai model perhitungan bersama. Latihan memakai catatan A/B, jawaban numerik, dan penjelasan sebelum progres diberikan. Prototipe ini bukan alat desain struktur, drainase, atau keselamatan.
 
-## Pilih versi
+Redesign 15 Oktober 2026 belum dideploy ulang; deployment Vercel di atas menampilkan versi sebelumnya. Project Vercel belum tertaut ke GitHub untuk auto-deploy, jadi push ke `main` tidak memperbarui situs. Rincian implementasi dan pemeriksaan ada di [catatan perbaikan](PERBAIKAN_BEAM_LAB_V3.md). `npm test` menjalankan pemeriksaan model dan materi.
 
-Ketiga versi tersedia dari menu **Versi** di aplikasi. Halaman awal tetap membuka 1.0; gunakan menu tersebut untuk berpindah.
-
-- **1.0** — aplikasi awal: buka [`index.html`](index.html), tag GitHub `v1.0.0`.
-- **2.0** — animasi jembatan 2D dan grafik lendutan: buka [`v2.0/index.html`](v2.0/index.html), tag `v2.0.0`.
-- **2.5** — materi 2.0 ditambah simulasi debit air, grafik Manning, dan bank soal: buka [`v2.5/index.html`](v2.5/index.html), tag `v2.5.0`.
-
-[`v2/index.html`](v2/index.html) juga menyediakan halaman pemilih versi. Folder versi 2.0 dan 2.5 menyimpan progres pembelajaran secara terpisah di browser.
+Asumsi materi dan alur pengembangan dicatat di [WORKFLOW.md](WORKFLOW.md). Catatan implementasi V3 ada di [v3.0/README.md](v3.0/README.md).

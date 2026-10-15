@@ -67,6 +67,28 @@ Status: pratinjau jembatan 2D beserta aset SVG, perhitungan beban titik, grafik,
 
 Status: jalur Hidraulika dan tiga soal awal tersedia di `v2.5/`; pilihannya muncul dalam menu **Versi**.
 
+## Pengembangan versi 3.0
+
+1. Salin baseline 2.5 ke `v3.0/` agar seluruh misi, rumus, grafik, soal, dan pola gamifikasi tetap tersedia.
+2. Ganti scene jembatan dan saluran SVG dengan geometri Three.js yang dibundel lokal, tanpa CDN saat runtime.
+3. Hubungkan beban, bentang, material, dan profil ke deformasi gelagar 3D; pertahankan grafik lendutan sebagai pembacaan kuantitatif.
+4. Hubungkan lebar, kedalaman, kemiringan, dan kekasaran ke dimensi kanal, muka air animasi, debit Manning, dan grafik `Q` terhadap `y`.
+5. Tambahkan orbit drag/touch, zoom, reset kamera, fallback WebGL, dan dukungan reduced motion serta keyboard.
+6. Pisahkan progres V3 dari versi sebelumnya dan tambahkan V3 pada hub serta menu pemilih versi.
+
+Status baseline sebelum redesign 15 Oktober 2026: V3 saat itu dideploy ke `https://beam-lab-one.vercel.app/v3.0/` dari workspace lokal. Scene 3D bersifat edukatif; deformasi divisualkan lebih besar dari nilai fisik agar mudah dilihat.
+
 ## Menjalankan prototipe
 
 Buka `index.html` langsung di browser. Progres misi disimpan di penyimpanan lokal browser; tombol **Mulai ulang progres** menghapus progres prototipe pada perangkat tersebut.
+
+## Redesign V3 setelah audit 15 Oktober 2026
+
+1. Terapkan prinsip Taste Skill untuk ruang eksperimen dengan tipografi terbaca dan scene sebagai fokus.
+2. Pisahkan perhitungan ke `v3.0/model.js` agar scene dan grafik konsisten.
+3. Ganti renderer dengan Three.js yang dibundel lokal; tambahkan kendaraan bergerak, muatan, bayangan, penampang, dan partikel air.
+4. Hubungkan materi dan kondisi eksperimen; tambahkan catatan A/B, angka bersatuan, penjelasan, dan petunjuk bertahap.
+5. Benahi kunci bentang, kelulusan, latihan ulang, rute, reset progres, dan penyimpanan.
+6. Periksa seluruh delapan latihan, hitungan otomatis, serta komposisi desktop/tablet/ponsel.
+
+Status redesign 15 Oktober 2026: kode tersedia di branch `main`; delapan latihan dimainkan di browser, 11 pengujian model lulus, build berhasil, dan lint Taste Skill 0 FAIL/0 WARN. Project Vercel belum tertaut ke GitHub, sehingga push tidak memicu deployment. Catatan rinci ada di [PERBAIKAN_BEAM_LAB_V3.md](PERBAIKAN_BEAM_LAB_V3.md). Untuk V3 jalankan `npm run dev`; setelah mengubah renderer, jalankan `npm run build`.
